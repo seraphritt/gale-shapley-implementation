@@ -1,3 +1,6 @@
+# Codigo feito por: Isaque Augusto da Silva Santos, Matricula: 190089245
+# Projeto 2 de Teoria e Aplicação de Grafos, Turma A, 2021/1
+# Prof. Dibio
 import re
 
 
@@ -48,6 +51,8 @@ def continua(dict_de_alunos, dict_stable):
 
 def gale_shapley(proj, students):
     stable_dict = {}
+    dict_def_projects = {}
+    vetor_proj_n_completos = []
     contador = 0
     alunos_projeto = []
     cheio = 0
@@ -63,6 +68,7 @@ def gale_shapley(proj, students):
                     # se aluno tiver preferencias, ou seja, se ele ainda tiver alguma possibilidade de projeto
                     contador += 1
                     if contador % 10 == 0:
+                        print("\n\n\n")
                         print(f"[+] Iteracao Num {contador}")
                         for i in range(1, 201):
                             if stable_dict[f"A{i}"]:
@@ -73,16 +79,28 @@ def gale_shapley(proj, students):
                             if proj[f"P{i}"][0] == 0:
                                 proj_completos += 1
                             else:
+                                vetor_proj_n_completos.append(f"P{i}")
                                 proj_incompleto += 1
-                        print("[+] num de alunos com projetos:", cheio)
-                        print("[+] num de alunos sem projetos:", vazio)
-                        print("[+] num de projetos completos:", proj_completos)
-                        print("[+] num de projetos incompletos:", proj_incompleto)
+                        #for i in range(1, 201):
+                            #print(f'A{i}: {stable_dict.get(f"A{i}")}')
+                        for y in range(1, 51):
+                            dict_def_projects[f"P{y}"] = []
+                        for i in range(1, 201):
+                            for k in range(1, 51):
+                                if stable_dict.get(f"A{i}"):
+                                    if stable_dict.get(f"A{i}")[0] == f"P{k}":
+                                        dict_def_projects[f"P{k}"].append(f"A{i}")
+                        print(dict_def_projects)    # printa relacao projeto x aluno
+                        print(f"Projetos incompletos: {vetor_proj_n_completos}")
+                        print("* numero de alunos com projetos:", cheio)
+                        print("* numero de alunos sem projetos:", vazio)
+                        print("* numero de projetos completos:", proj_completos)
+                        print("* numero de projetos incompletos:", proj_incompleto)
                         cheio = 0
                         vazio = 0
                         proj_completos = 0
+                        vetor_proj_n_completos = []
                         proj_incompleto = 0
-                        print("-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-")
 
                     if int(proj.get(students.get(f"A{j}")[0])[0]) > 0 and \
                             int(students.get(f"A{j}")[len(students.get(f"A{j}")) - 1]) >= \
