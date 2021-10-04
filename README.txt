@@ -2,6 +2,9 @@
     # Projeto 2 de Teoria e Aplicação de Grafos, Turma A, 2021/1
     # Prof. Dibio
 
+    A arquivo "Entrada.txt" fornecido foi modificado porque tinha um erro de formatação, por favor usar o arquivo
+que está sendo "Entrada.txt" que está sendo enviado junto com o projeto.
+
     A variação do algoritmo de Gale-Shapley utilizada para o projeto foi a seguinte:
 
     Foram utilizados dicionários para obter as preferências dos alunos e os critérios dos projetos.
