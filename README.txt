@@ -7,7 +7,7 @@
     Foram utilizados dicionários para obter as preferências dos alunos e os critérios dos projetos.
 
     O aluno foi o fator determinante dessa variação do algoritmo, ou seja, o aluno foi escolhido primeiro
-e a partir da escolha de preferência do aluno é que os casamentos (matchings) foram formados.
+e a partir da escolha de preferência do aluno é que os casamentos (matchings) com os projetos foram formados.
 
     O critério, no caso de dois alunos possuírem a mesma nota e a nota for suficiente para admissão no
 projeto foi que o aluno que entrou primeiro tem prioridade e fica com a vaga.
