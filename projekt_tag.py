@@ -1,4 +1,4 @@
-# Code made by: seraphritt
+# Codigo feito por: seraphritt
 
 import re
 
