@@ -1,4 +1,4 @@
-    # Code made by: seraphritt
+    # Código feito por: seraphritt
     
     A arquivo "Entrada.txt" fornecido foi modificado porque tinha um erro de formatação, por favor usar o arquivo
 que está sendo "Entrada.txt" que está sendo enviado junto com o projeto.
