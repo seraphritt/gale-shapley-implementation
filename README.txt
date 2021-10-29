@@ -1,7 +1,5 @@
-    # Isaque Augusto da Silva Santos, Matricula: 190089245
-    # Projeto 2 de Teoria e Aplicação de Grafos, Turma A, 2021/1
-    # Prof. Dibio
-
+    # Code made by: seraphritt
+    
     A arquivo "Entrada.txt" fornecido foi modificado porque tinha um erro de formatação, por favor usar o arquivo
 que está sendo "Entrada.txt" que está sendo enviado junto com o projeto.
 
