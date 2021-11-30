@@ -1,4 +1,4 @@
-# Codigo feito por: seraphritt
+# Codigo feito por: Isaque Augusto (seraphritt)
 
 import re
 
